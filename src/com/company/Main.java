@@ -26,8 +26,8 @@ public class Main {
         }
 
         result = weight / (height / m * height / m);       // формула перевода в М2
-        System.out.println("Ваш ИМТ: " + result + " ");
-
+        String str = String.format ("Ваш ИМТ %.1f ",result);
+        System.out.print(str);
 
         if (result>0 && result <=16.5) {
             System.out.println("Крайний недостаток веса");
